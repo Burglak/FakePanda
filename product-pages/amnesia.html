@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Panda - Amnesia: Rebirth</title>
+    <link rel="stylesheet" href="../css/fontello.css">
+    <link rel="icon" type="image/x-icon" href="../img/fav.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d98f0966f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+        <a href="../index.html"><img src="../img/panda_logo.png" alt="panda_logo" class="logo"></a>
+        </div>
+        <div>
+            <ul id="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a class="active" href="../store.html">Store</a></li>
+                <li><a href="../news.html">News</a></li>
+                <li><a href="../about.html">About us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a id="iconCart" class="iconCart"><i class="demo-icon icon-basket-1"></i></a></li>
+                <li><a id="menu-close"><i class="fa-solid fa-xmark"></i></a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <section class="cart">
+        <div class="close">X</div>
+        <div class="listCart">
+            
+        </div>
+        <div class="total-price">Total: $0</div>
+        <div class="checkout"><a>PAY</a></div>
+    </section>
+    <h2 style="text-align: center;">Amnesia: Rebirth</h2>
+    <section id="product-details">
+        <div class="product-img">
+            <img id = "mainImg" src="../img/games/amnesia1.jpg" alt="">
+
+            <div class="small-product-img">
+                <div class="small-img">
+                    <img class="small-i" src="../img/games/amnesia1.jpg" alt="">
+                </div>
+                <div class="small-img">
+                    <img class="small-i" src="../img/games/amnesia2.jpg" alt="">
+                </div>
+                <div class="small-img">
+                    <img class="small-i" src="../img/games/amnesia3.jpg" alt="">
+                </div>
+                <div class="small-img">
+                    <img class="small-i" src="../img/games/amnesia4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="product-description">
+            <img src="../img/games/amnesiaMain.jpg" alt="">
+            <p>
+                A first-person horror adventure. Uncover your past and survive 
+                the Algerian desert. Fear is your enemy; stay calm to not succumb to an 
+                illness threatening you and your loved one. Avoid darkness, hide from monsters 
+                and solve puzzles. Adventure Mode available for a less scary experience.
+            </p>
+            <p>RELEASE DATE: <span>20 Oct, 2020</span></p>
+            <p>DEVELOPER: <span>Frictional Games</span></p>
+            <p>PUBLISHER: <span>Frictional Games</span></p>
+        </div>
+    </section>
+
+    <section id="buy-section">
+        <div class="buy">
+            <h1>Buy: Amnesia: Rebirth</h1>
+            <div class="buy-btt">
+            <h2>$26.99</h2>
+            <button id="buy-button" onclick="addToCart('Amnesia: Rebirth', '$26.99', '../img/games/amnesiaMain.jpg')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section id="product-requirements">
+        <h2>Requirements</h2>
+        <table>
+            <tr>
+                <td>MINIMUM</td>
+                <td>RECOMMENDED</td>
+            </tr>
+            <tr>
+                <td>Windows 7 / 8 / 10, 64-bits</td>
+                <td>Windows 7 / 8 / 10, 64-bits</td>
+            </tr>
+            <tr>
+                <td>Processor: Core i3 / AMD FX 2.4Ghz</td>
+                <td>Processor: Core i5 / Ryzen 5</td>
+            </tr>
+            <tr>
+                <td>Memory: 4 GB RAM</td>
+                <td>Memory: 8 GB RAM</td>
+            </tr>
+            <tr>
+                <td>Graphics: OpenGL 4.0, Nvidia GTX 460 / AMD Radeon HD 5750 / Intel HD 630</td>
+                <td>Graphics: OpenGL 4.3, Nvidia GTX 680 / AMD Radeon RX 580 / Intel Xe-HPG</td>
+            </tr>
+            <tr>
+                <td>Storage: 35 GB available space</td>
+                <td>Storage: 35 GB available space</td>
+            </tr>
+        </table>
+    </section>
+    <section id="newsletter">
+        <div class="newsletter-text">
+            <h2>Sign up for newsletter</h2>
+            <p>Get exclusive offers and updates straight to your inbox</p>
+        </div>
+        <form action="form.php">
+            <input type="text" placeholder="Your e-mail address">
+            <button>Sign Up</button>
+        </form>
+    </section>
+    <footer>
+        <div id="footer-sections">
+            <div class="section">
+                <h4>Contact</h4>
+                <p><span>Address:</span> 123 Main St, Anytown, USA</p>
+                <p><span>Telephone:</span> (123) 456-7890</p>
+            </div>
+            <div class="section">
+                <h4>Follow us</h4>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="section">
+                <h4>About</h4>
+                <p>About Us</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+        <p>Copyright &copy; 2024 Fake Panda. All rights reserved</p>
+    </footer>
+    
+    <script>
+        var mainImg = document.getElementById("mainImg");
+        var smallimg = document.getElementsByClassName("small-i");
+
+        smallimg[0].onclick = function(){
+            mainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            mainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            mainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            mainImg.src = smallimg[3].src;
+        }
+    </script>
+    <script src="../cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Panda - Divinity: Original Sin 2</title>
+    <link rel="stylesheet" href="../css/fontello.css">
+    <link rel="icon" type="image/x-icon" href="../img/fav.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d98f0966f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+        <a href="../index.html"><img src="../img/panda_logo.png" alt="panda_logo" class="logo"></a>
+        </div>
+        <div>
+            <ul id="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a class="active" href="../store.html">Store</a></li>
+                <li><a href="../news.html">News</a></li>
+                <li><a href="../about.html">About us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a id="iconCart" class="iconCart"><i class="demo-icon icon-basket-1"></i></a></li>
+                <li><a id="menu-close"><i class="fa-solid fa-xmark"></i></a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <section class="cart">
+        <div class="close">X</div>
+        <div class="listCart">
+            
+        </div>
+        <div class="total-price">Total: $0</div>
+        <div class="checkout"><a>PAY</a></div>
+    </section>
+    <h2 style="text-align: center;">Divinity: Original Sin 2</h2>
+    <section id="product-details">
+        <div class="product-img">
+            <img id = "mainImg" src="../img/games/divinity1.jpg" alt="">
+
+            <div class="small-product-img">
+                <div class="small-img">
+                    <img class="small-i" src="../img/games/divinity1.jpg" alt="">
+                </div>
+                <div class="small-img">
+                    <img class="small-i" src="../img/games/divinity2.jpg" alt="">
+                </div>
+                <div class="small-img">
+                    <img class="small-i" src="../img/games/divinity3.jpg" alt="">
+                </div>
+                <div class="small-img">
+                    <img class="small-i" src="../img/games/divinity4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="product-description">
+            <img src="../img/games/divinityMain.jpg" alt="">
+            <p>
+                The critically acclaimed RPG that raised the bar, from the creators of Baldur's 
+                Gate 3. Gather your party. Master deep, tactical combat. Venture 
+                as a party of up to four - but know that only one of you will 
+                have the chance to become a God.
+            </p>
+            <p>RELEASE DATE: <span>14 Sep, 2017</span></p>
+            <p>DEVELOPER: <span>Larian Studios</span></p>
+            <p>PUBLISHER: <span>Larian Studios</span></p>
+        </div>
+    </section>
+
+    <section id="buy-section">
+        <div class="buy">
+            <h1>Buy: Divinity: Original Sin 2</h1>
+            <div class="buy-btt">
+            <h2>$25.99</h2>
+            <button id="buy-button" onclick="addToCart('Divinity: Original Sin 2', '$25.99', '../img/games/divinityMain.jpg')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section id="product-requirements">
+        <h2>Requirements</h2>
+        <table>
+            <tr>
+                <td>MINIMUM</td>
+                <td>RECOMMENDED</td>
+            </tr>
+            <tr>
+                <td>Windows 10 (versions 64 bits uniquement)</td>
+                <td>Windows 10 (versions 64 bits uniquement)</td>
+            </tr>
+            <tr>
+                <td>Processor: AMD Ryzen 3 1200 3.1 GHz / Intel Core i5-4460 3.2 GHz</td>
+                <td>AMD Ryzen 5 1600 3.2 GHz / Intel Core i7-4790 3.6 GHz</td>
+            </tr>
+            <tr>
+                <td>Memory: 8 GB RAM</td>
+                <td>Memory: 16 GB RAM</td>
+            </tr>
+            <tr>
+                <td>Graphics: AMD R9 380 /NVIDIA GeForce GTX 960</td>
+                <td>Graphics: AMD R9 380 /NVIDIA GeForce GTX 960</td>
+            </tr>
+            <tr>
+                <td>DirectX: 12</td>
+                <td>DirectX: 12</td>
+            </tr>
+            <tr>
+                <td>Storage: 160 GB available space</td>
+                <td>Storage: 160 GB available space</td>
+            </tr>
+        </table>
+    </section>
+    <section id="newsletter">
+        <div class="newsletter-text">
+            <h2>Sign up for newsletter</h2>
+            <p>Get exclusive offers and updates straight to your inbox</p>
+        </div>
+        <form action="form.php">
+            <input type="text" placeholder="Your e-mail address">
+            <button>Sign Up</button>
+        </form>
+    </section>
+    <footer>
+        <div id="footer-sections">
+            <div class="section">
+                <h4>Contact</h4>
+                <p><span>Address:</span> 123 Main St, Anytown, USA</p>
+                <p><span>Telephone:</span> (123) 456-7890</p>
+            </div>
+            <div class="section">
+                <h4>Follow us</h4>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="section">
+                <h4>About</h4>
+                <p>About Us</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+        <p>Copyright &copy; 2024 Fake Panda. All rights reserved</p>
+    </footer>
+    
+    <script>
+        var mainImg = document.getElementById("mainImg");
+        var smallimg = document.getElementsByClassName("small-i");
+
+        smallimg[0].onclick = function(){
+            mainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            mainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            mainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            mainImg.src = smallimg[3].src;
+        }
+    </script>
+<script src="../cart.js"></script>
+</body>
+</html>

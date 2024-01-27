@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Panda - Store</title>
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="icon" type="image/x-icon" href="/img/fav.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d98f0966f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+        <a href="index.html"><img src="img/panda_logo.png" alt="panda_logo" class="logo"></a>
+        </div>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="store.html">Store</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a id="iconCart" class="iconCart"><i class="demo-icon icon-basket-1"></i></a></li>
+                <li><a id="menu-close"><i class="fa-solid fa-xmark"></i></a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <section class="cart">
+        <div class="close">X</div>
+        <div class="listCart">
+            
+        </div>
+        <div class="total-price">Total: $0</div>
+        <div class="checkout"><a>PAY</a></div>
+    </section>
+    <section id="store-featured-slider">
+        <h2>Featured & Recommended</h2>
+        <div id="slide-1"class="slider-item" onclick="window.location.href='product-pages/the-witcher-3.html';">
+            <img src="img/games/witcherMain.jpg" alt="witcherMain">
+            <div class="description">
+                <h3>The Witcher 3</h3>
+                <div class="slider-images">
+                    <img src="img/games/witcher1.jpg" alt="">
+                    <img src="img/games/witcher2.jpg" alt="">
+                    <img src="img/games/witcher3.jpg" alt="">
+                    <img src="img/games/witcher4.jpg" alt="">
+                </div>
+                <div class="tags">
+                    <span>RPG</span>
+                    <span>Open World</span>
+                </div>
+            </div>
+        </div>
+        <div id="slide-2"class="slider-item" onclick="window.location.href='product-pages/valhalla.html';">
+            <img src="img/games/acValhallaMain.jpg" alt="witcherMain">
+            <div class="description">
+                <h3>Assassin's Creed: Valhalla</h3>
+                <div class="slider-images">
+                    <img src="img/games/valhalla1.jpg" alt="">
+                    <img src="img/games/valhalla2.jpg" alt="">
+                    <img src="img/games/valhalla3.jpg" alt="">
+                    <img src="img/games/valhalla4.jpg" alt="">
+                </div>
+                <div class="tags">
+                    <span>RPG</span>
+                    <span>Open World</span>
+                </div>
+            </div>
+        </div>
+        <div id="slide-3"class="slider-item" onclick="window.location.href='product-pages/persona.html';">
+            <img src="img/games/p3rMain.jpg" alt="witcherMain">
+            <div class="description">
+                <h3>Persona 3 Reload</h3>
+                <div class="slider-images">
+                    <img src="img/games/persona1.jpg" alt="">
+                    <img src="img/games/persona3.jpg" alt="">
+                    <img src="img/games/persona3.jpg" alt="">
+                    <img src="img/games/persona4.jpg" alt="">
+                </div>
+                <div class="tags">
+                    <span>JRPG</span>
+                    <span>ANIME</span>
+                    <span>Open World</span>
+                </div>
+            </div>
+        </div>
+        <div id="slide-4"class="slider-item" onclick="window.location.href='product-pages/lethal-company.html';">
+            <img src="img/games/lethalCompanyMain.jpg" alt="witcherMain">
+            <div class="description">
+                <h3>Lethal Company</h3>
+                <div class="slider-images">
+                    <img src="img/games/lethal1.jpg" alt="">
+                    <img src="img/games/lethal2.jpg" alt="">
+                    <img src="img/games/lethal3.jpg" alt="">
+                    <img src="img/games/lethal4.jpg" alt="">
+                </div>
+                <div class="tags">
+                    <span>HORROR</span>
+                    <span>CO-OP</span>
+                </div>
+            </div>
+        </div>
+        <div id="slide-5"class="slider-item" onclick="window.location.href='product-pages/aseprite.html';">
+            <img src="img/games/asepriteMain.jpg" alt="witcherMain">
+            <div class="description">
+                <h3>Aseprite</h3>
+                <div class="slider-images">
+                    <img src="img/games/aseprite1.jpg" alt="">
+                    <img src="img/games/aseprite2.jpg" alt="">
+                    <img src="img/games/aseprite3.jpg" alt="">
+                    <img src="img/games/aseprite4.jpg" alt="">
+                </div>
+                <div class="tags">
+                    <span>PIXEL GRAPHICS</span>
+                    <span>DESIGN & ILLUSTRATION</span>
+                </div>
+            </div>
+        </div>
+        <div id="slide-6"class="slider-item" onclick="window.location.href='product-pages/krita.html';">
+            <img src="img/games/kritaMain.jpg" alt="witcherMain">
+            <div class="description">
+                <h3>Krita</h3>
+                <div class="slider-images">
+                    <img src="img/games/krita1.jpg" alt="">
+                    <img src="img/games/krita2.jpg" alt="">
+                    <img src="img/games/krita3.jpg" alt="">
+                    <img src="img/games/krita4.jpg" alt="">
+                </div>
+                <div class="tags">
+                    <span>DESIGN & ILLUSTRATION</span>
+                    <span>ANIMATION & MODELING</span>
+                </div>
+            </div>
+        </div>
+        <div id="slider-nav">
+            <button id="slide-1-btt" class="slider-btt"> </button>
+            <button id="slide-2-btt" class="slider-btt"> </button>
+            <button id="slide-3-btt" class="slider-btt"> </button>
+            <button id="slide-4-btt" class="slider-btt"></button>
+            <button id="slide-5-btt" class="slider-btt"> </button>
+            <button id="slide-6-btt" class="slider-btt"> </button>
+        </div>
+    </section>
+
+    <section id="products" class="rpg">
+        <h2>Games</h2>
+        <h3>RPG</h3>
+        <div class="programs-container">
+            <div class="product" onclick="window.location.href='product-pages/the-witcher-3.html';">
+                <img src="img/games/witcherMain.jpg" alt="witcherMain">
+                <div class="description">
+                    <div class="description-text">
+                        <p>CD PROJECT RED</p>
+                        <h3>Witcher 3: Wild Hunt</h3>
+                    </div>
+                    <div class="price">
+                        <span>$3.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='product-pages/valhalla.html';">
+                <img src="img/games/acValhallaMain.jpg" alt="witcherMain">
+                <div class="description">
+                    <div class="description-text">
+                        <p>UBISOFT</p>
+                        <h3>Assassin's Creed: Valhalla</h3>
+                    </div>
+                    <div class="price">
+                        <span>$39.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='product-pages/baldur.html';">
+                <img src="img/games/baldurMain.jpg" alt="witcherMain">
+                <div class="description">
+                    <div class="description-text">
+                        <p>LARIAN STUDIOS</p>
+                        <h3>Baldur's Gate 3</h3>
+                    </div>
+                    <div class="price">
+                        <span>$49.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='product-pages/divinity.html';">
+                <img src="img/games/divinityMain.jpg" alt="witcherMain">
+                <div class="description">
+                    <div class="description-text">
+                        <p>LARIAN STUDIOS</p>
+                        <h3>Divinity: Original Sin 2</h3>
+                    </div>
+                    <div class="price">
+                        <span>$25.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='product-pages/fable.html';">
+                <img src="img/games/fableMain.jpg" alt="witcherMain">
+                <div class="description">
+                    <div class="description-text">
+                        <p>LIONHEAD STUDIOS</p>
+                        <h3>Fable Anniversary</h3>
+                    </div>
+                    <div class="price">
+                        <span>$15.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='product-pages/elden.html';">
+                <img src="img/games/eldenMain.jpg" alt="witcherMain">
+                <div class="description">
+                    <div class="description-text">
+                        <p>FROM SOFTWARE</p>
+                        <h3>Elden Ring</h3>
+                    </div>
+                    <div class="price">
+                        <span>$37.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <section id="products" class="jrpg">
+        <h3>JRPG</h3>
+        <div class="programs-container">
+            <div class="product" onclick="window.location.href='product-pages/persona.html';">
+                <img src="img/games/p3rMain.jpg" alt="">
+                <div class="description">
+                    <div class="description-text">
+                        <p>ATLUS</p>
+                        <h3>Persona 3 Reload</h3>
+                    </div>
+                    <div class="price">
+                        <span>$59.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='product-pages/nier-automata.html';">
+                <img src="img/games/nierMain.jpg" alt="witcherMain">
+                <div class="description">
+                    <div class="description-text">
+                        <p>SQUARE ENIX</p>
+                        <h3>NieR:Automata™</h3>
+                    </div>
+                    <div class="price">
+                        <span>$19.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='product-pages/ffxv.html';">
+                <img src="img/games/ffvxMain.jpg" alt="witcherMain">
+                <div class="description">
+                    <div class="description-text">
+                        <p>SQUARE ENIX</p>
+                        <h3>FINAL FANTASY XV WINDOWS EDITION</h3>
+                    </div>
+                    <div class="price">
+                        <span>$16.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='product-pages/ffvii.html';">
+                <img src="img/games/ffviiMain.jpg" alt="witcherMain">
+                <div class="description">
+                    <div class="description-text">
+                        <p>SQUARE ENIX</p>
+                        <h3>FINAL FANTASY VII REMAKE INTERGRADE</h3>
+                    </div>
+                    <div class="price">
+                        <span>$69.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <section id="products" class="horror">
+        <h3>HORROR</h3>
+        <div class="programs-container">
+            <div class="product" onclick="window.location.href='product-pages/lethal-company.html';">
+                <img src="img/games/lethalCompanyMain.jpg" alt="">
+                <div class="description">
+                    <div class="description-text">
+                        <p>ZEEKERSS</p>
+                        <h3>Lethal Company</h3>
+                    </div>
+                    <div class="price">
+                        <span>$10.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='product-pages/outlast.html';">
+                <img src="img/games/outlastMain.jpg" alt="witcherMain">
+                <div class="description">
+                    <div class="description-text">
+                        <p>RED BARRELS</p>
+                        <h3>The Outlast Trials</h3>
+                    </div>
+                    <div class="price">
+                        <span>$22.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='product-pages/amnesia.html';">
+                <img src="img/games/amnesiaMain.jpg" alt="witcherMain">
+                <div class="description">
+                    <div class="description-text">
+                        <p>FRICTIONAL GAMES</p>
+                        <h3>Amnesia: Rebirth</h3>
+                    </div>
+                    <div class="price">
+                        <span>$26.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='product-pages/alien.html';">
+                <img src="img/games/alienMain.jpg" alt="witcherMain">
+                <div class="description">
+                    <div class="description-text">
+                        <p>CREATIVE ASSEMBLY</p>
+                        <h3>Alien: Isolation</h3>
+                    </div>
+                    <div class="price">
+                        <span>$29.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <section id="products" class="visual-novel">
+        <h3>VISUAL NOVEL</h3>
+        <div class="programs-container">
+            <div class="product" onclick="window.location.href='product-pages/danganronpa.html';">
+                <img src="img/games/danganronpaMain.jpg" alt="">
+                <div class="description">
+                    <div class="description-text">
+                        <p>SPIKE CHUNSOFT</p>
+                        <h3>Danganronpa: Trigger Happy Havoc</h3>
+                    </div>
+                    <div class="price">
+                        <span>$13.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='product-pages/nekopara.html';">
+                <img src="img/games/nekoparaMain.jpg" alt="witcherMain">
+                <div class="description">
+                    <div class="description-text">
+                        <p>NEKO WORKs</p>
+                        <h3>NEKOPARA Vol. 0</h3>
+                    </div>
+                    <div class="price">
+                        <span>$3.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='product-pages/clannad.html';">
+                <img src="img/games/clannadMain.jpg" alt="witcherMain">
+                <div class="description">
+                    <div class="description-text">
+                        <p>VISUAL ARTS/KEY</p>
+                        <h3>CLANNAD</h3>
+                    </div>
+                    <div class="price">
+                        <span>$39.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <section id="products" class="jrpg">
+        <h3>PROGRAMS</h3>
+        <div class="programs-container">
+            <div class="product" onclick="window.location.href='product-pages/aseprite.html';">
+                <img src="img/games/asepriteMain.jpg" alt="">
+                <div class="description">
+                    <div class="description-text">
+                        <p>IGARA STUDIO</p>
+                        <h3>Aseprite</h3>
+                    </div>
+                    <div class="price">
+                        <span>$15.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='product-pages/krita.html';">
+                <img src="img/games/kritaMain.jpg" alt="">
+                <div class="description">
+                    <div class="description-text">
+                        <p>KRITA TEAM</p>
+                        <h3>Krita</h3>
+                    </div>
+                    <div class="price">
+                        <span>$7.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='product-pages/rpgmaker.html';">
+                <img src="img/games/rpgmakerMain.jpg" alt="witcherMain">
+                <div class="description">
+                    <div class="description-text">
+                        <p>GOTCHA GOTCHA GAMES</p>
+                        <h3>RPG Maker MZ</h3>
+                    </div>
+                    <div class="price">
+                        <span>$59.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='product-pages/wallpaper-engine.html';">
+                <img src="img/games/wallpaperMain.jpg" alt="witcherMain">
+                <div class="description">
+                    <div class="description-text">
+                        <p>WALLPAPER ENGINE TEAM</p>
+                        <h3>Wallpaper Engine</h3>
+                    </div>
+                    <div class="price">
+                        <span>$2.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <section id="newsletter">
+        <div class="newsletter-text">
+            <h2>Sign up for newsletter</h2>
+            <p>Get exclusive offers and updates straight to your inbox</p>
+        </div>
+        <form action="form.php">
+            <input type="text" placeholder="Your e-mail address">
+            <button>Sign Up</button>
+        </form>
+    </section>
+
+    <footer>
+        <div id="footer-sections">
+            <div class="section">
+                <h4>Contact</h4>
+                <p><span>Address:</span> 123 Main St, Anytown, USA</p>
+                <p><span>Telephone:</span> (123) 456-7890</p>
+            </div>
+            <div class="section">
+                <h4>Follow us</h4>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="section">
+                <h4>About</h4>
+                <p>About Us</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+        <p>Copyright &copy; 2024 Fake Panda. All rights reserved</p>
+    </footer>
+    <script src="store.js"></script>
+    <script src="product.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Panda - Contact</title>
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/fav.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d98f0966f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+        <a href="index.html"><img src="img/panda_logo.png" alt="panda_logo" class="logo"></a>
+        </div>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="iconCart" id="iconCart"><i class="demo-icon icon-basket-1"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="cart">
+        <div class="close">X</div>
+        <div class="listCart">
+            
+        </div>
+        <div class="checkout"><a href="cart.html">CHECKOUT</a></div>
+    </section>
+    
+    <section id="cart">
+        <h2>YOUR SHOPPING CART</h2>
+        <div id="cart-items">
+            <div class="cart-item">
+                <div class="cart-item-logo">
+                    <img src="img/games/witcherMain.jpg" alt="item-1">
+                    <h3>The Witcher 3</h3>
+                </div>  
+                <div class="item-details">
+                    <i class="fa-brands fa-windows"></i>
+                    <p>$3.99</p>
+                    <i id="remove-item" class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-logo">
+                    <img src="img/games/p3rMain.jpg" alt="item-1">
+                    <h3>Persona 3 Reolad</h3>
+                </div>  
+                <div class="item-details">
+                    <i class="fa-brands fa-windows"></i>
+                    <p>$59.99</p>
+                    <i id="remove-item" class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+        <div id="summary">
+            <div id="cart-total">
+                <h3 id="coupon-text">Have a coupon?</h3>
+                <br>
+                <div id="coupon">
+                    <input type="text" placeholder="Enter your coupon">
+                    <button>Apply</button>
+                </div>
+                <div id="buy">
+                    <div id="total-price">
+                        <h3>Estimated total</h3>
+                        <span>$63.98</span>
+                    </div>
+                    <h3>Is this a purchase for yourself or is it a gift? Select one to continue to checkout.</h3>
+                    <button>Continue as a gift</button>
+                    <button>Purchase for myslef</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="newsletter-text">
+            <h2>Sign up for newsletter</h2>
+            <p>Get exclusive offers and updates straight to your inbox</p>
+        </div>
+        <form action="form.php">
+            <input type="text" placeholder="Your e-mail address">
+            <button>Sign Up</button>
+        </form>
+    </section>
+    <footer>
+        <div id="footer-sections">
+            <div class="section">
+                <h4>Contact</h4>
+                <p><span>Address:</span> 123 Main St, Anytown, USA</p>
+                <p><span>Telephone:</span> (123) 456-7890</p>
+            </div>
+            <div class="section">
+                <h4>Follow us</h4>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="section">
+                <h4>About</h4>
+                <p>About Us</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+        <p>Copyright &copy; 2024 Fake Panda. All rights reserved</p>
+    </footer>
+    
+    <script src="cart.js"></script>
+</body>
+</html>

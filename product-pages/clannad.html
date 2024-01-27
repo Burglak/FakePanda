@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Panda - CLANNAD</title>
+    <link rel="stylesheet" href="../css/fontello.css">
+    <link rel="icon" type="image/x-icon" href="../img/fav.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d98f0966f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+        <a href="../index.html"><img src="../img/panda_logo.png" alt="panda_logo" class="logo"></a>
+        </div>
+        <div>
+            <ul id="navbar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a class="active" href="../store.html">Store</a></li>
+                <li><a href="../news.html">News</a></li>
+                <li><a href="../about.html">About us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a id="iconCart" class="iconCart"><i class="demo-icon icon-basket-1"></i></a></li>
+                <li><a id="menu-close"><i class="fa-solid fa-xmark"></i></a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <section class="cart">
+        <div class="close">X</div>
+        <div class="listCart">
+            
+        </div>
+        <div class="total-price">Total: $0</div>
+        <div class="checkout"><a>PAY</a></div>
+    </section>
+    <h2 style="text-align: center;">CLANNAD</h2>
+    <section id="product-details">
+        <div class="product-img">
+            <img id = "mainImg" src="../img/games/clannad1.jpg" alt="">
+
+            <div class="small-product-img">
+                <div class="small-img">
+                    <img class="small-i" src="../img/games/clannad1.jpg" alt="">
+                </div>
+                <div class="small-img">
+                    <img class="small-i" src="../img/games/clannad2.jpg" alt="">
+                </div>
+                <div class="small-img">
+                    <img class="small-i" src="../img/games/clannad3.jpg" alt="">
+                </div>
+                <div class="small-img">
+                    <img class="small-i" src="../img/games/clannad4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="product-description">
+            <img src="../img/games/clannadMain.jpg" alt="">
+            <p>
+                From the world renowned visual novel studio Key, the highly rated story of CLANNAD is 
+                now available on Steam! Improved visuals, achievement integration, and Dangopedia 
+                make this the best version of CLANNAD to date.
+            </p>
+            <p>RELEASE DATE: <span>28 Apr, 2004</span></p>
+            <p>DEVELOPER: <span>VisualArts/Key</span></p>
+            <p>PUBLISHER: <span>Sekai Project</span></p>
+        </div>
+    </section>
+
+    <section id="buy-section">
+        <div class="buy">
+            <h1>Buy: Clannad</h1>
+            <div class="buy-btt">
+            <h2>$39.99</h2>
+            <button id="buy-button" onclick="addToCart('Clannad', '$39.99', '../img/games/clannadMain.jpg')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section id="product-requirements">
+        <h2>Requirements</h2>
+        <table>
+            <tr>
+                <td>MINIMUM</td>
+                <td>RECOMMENDED</td>
+            </tr>
+            <tr>
+                <td>Windows 8, 10, 11</td>
+                <td>Windows 10</td>
+            </tr>
+            <tr>
+                <td>Memory: 128 MB RAM</td>
+                <td>Memory: 128 MB RAM</td>
+            </tr>
+            <tr>
+                <td>Storage: 1 GB available space</td>
+                <td>Storage: 1 GB available space</td>
+            </tr>
+        </table>
+    </section>
+    <section id="newsletter">
+        <div class="newsletter-text">
+            <h2>Sign up for newsletter</h2>
+            <p>Get exclusive offers and updates straight to your inbox</p>
+        </div>
+        <form action="form.php">
+            <input type="text" placeholder="Your e-mail address">
+            <button>Sign Up</button>
+        </form>
+    </section>
+    <footer>
+        <div id="footer-sections">
+            <div class="section">
+                <h4>Contact</h4>
+                <p><span>Address:</span> 123 Main St, Anytown, USA</p>
+                <p><span>Telephone:</span> (123) 456-7890</p>
+            </div>
+            <div class="section">
+                <h4>Follow us</h4>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="section">
+                <h4>About</h4>
+                <p>About Us</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+        <p>Copyright &copy; 2024 Fake Panda. All rights reserved</p>
+    </footer>
+    
+    <script>
+        var mainImg = document.getElementById("mainImg");
+        var smallimg = document.getElementsByClassName("small-i");
+
+        smallimg[0].onclick = function(){
+            mainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            mainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            mainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            mainImg.src = smallimg[3].src;
+        }
+    </script>
+<script src="../cart.js"></script>
+</body>
+</html>
